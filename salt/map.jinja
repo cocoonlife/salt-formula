@@ -187,9 +187,9 @@ that differ from whats in defaults.yaml
       },
     },
     'Raspbian': {
-      'pkgrepo': 'deb http://repo.saltstack.com/apt/' +
+      'pkgrepo': 'deb http://repo.saltstack.com/py3/' +
       salt['grains.get']('os_family')|lower + '/' + salt['grains.get']('osmajorrelease', osrelease)|string + '/armhf/' + salt_release + ' ' + salt['grains.get']('oscodename') + ' main',
-      'key_url': 'https://repo.saltstack.com/apt/' + salt['grains.get']('os_family')|lower + '/' + salt['grains.get']('osmajorrelease', osrelease)|string + '/armhf/' + salt_release + '/SALTSTACK-GPG-KEY.pub',
+      'key_url': 'https://repo.saltstack.com/py3/' + salt['grains.get']('os_family')|lower + '/' + salt['grains.get']('osmajorrelease', osrelease)|string + '/armhf/' + salt_release + '/SALTSTACK-GPG-KEY.pub',
     },
     'SmartOS': {
       'salt_master': 'salt',
